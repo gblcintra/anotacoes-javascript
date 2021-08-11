@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="eventos.js"></script>
+    <title>Eventos</title>
+</head>
+<body>
+    <button 
+    style="
+        width: 50%;
+        height: 60px;
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    "
+    onmousedown="apertar()"
+    onmouseup="soltar()"
+    onmouseover="passar()"
+    onmouseout="tirar()"
+    onmousemove="mover()"
+    >Teste1</button>
+
+    <button 
+    style="
+        width: 50%;
+        height: 60px;
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    "
+    onclick="clicar()"
+    oncontextmenu="return botaoDireito()"
+    >Teste2</button>
+</body>
+</html>
