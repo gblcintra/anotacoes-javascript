@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="eventos.js"></script>
+    <title>Eventos</title>
+</head>
+
+<body onunload="sair()">
+    
+    <form action="" method="post" onsubmit="return false">
+        <input type="text" name="nome" onfocus="focado()" onblur="desfocado()" id=""></br></br>
+        
+        <select name="cidades" id="" onchange="mudanca(this)">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Ribeirao Preto</option>
+            <option>Franca</option>
+        </select>
+    </br></br>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
