@@ -14,6 +14,7 @@ buscaRepos = async () => {
 		return;
 	}
 
+	//VERIFICAR SE TEM REPOSITÓRIO NO ARRAY
 	const hasRepo = repositorios.find(repo => repo.full_name === input.value);
 
 	if (hasRepo) {
@@ -57,10 +58,11 @@ function renderRepos() {
 		let linkElement = document.createElement('button');
 		linkElement.textContent = 'Excluir';
 
+		//pegar a posição para apagar o repositorio 
 		let posicao = repositorios.indexOf(repo);
 
 
-		linkElement.setAttribute('onclick', 'deletarRepo(' + posicao + ')');
+		linkElement.setAttribute('onclick', `deletarRepo(${posicao})`);
 
 
 
@@ -77,7 +79,7 @@ function renderRepos() {
 
 }
 
-
+//remover o repositório por posição
 function deletarRepo(posicao) {
 	repositorios.splice(posicao, 1);
 	renderRepos();
